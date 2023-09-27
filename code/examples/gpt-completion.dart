@@ -3,7 +3,7 @@ import 'dart:async';
 import 'dart:convert';
 import 'package:flutter/material.dart';
 
-Future<String> getGPT3Completion(
+Future<String> getGPTCompletion(
   String apiKey,
   String prompt,
   int maxTokens,
