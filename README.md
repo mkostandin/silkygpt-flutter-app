@@ -15,7 +15,7 @@ Get the NHSCYPAA XXIV App!
   - Panels
 
 <p align="center">
-<img src="https://github.com/mkostandin/silkygpt-flutter-app/blob/main/silky-github-vertical.gif)" style="display:block;margin:auto;" alt="NECYVERSE" width="40%"/>
+<img src="https://github.com/mkostandin/silkygpt-flutter-app/blob/main/silky-github-vertical.gif" style="display:block;margin:auto;" alt="NECYVERSE" width="40%"/>
 </p>
 
 <a href="https://www.youtube.com/watch?v=-JZpr1r3hI8" target="_blank">Private Release Trailer</a>
