@@ -1,37 +1,47 @@
 
 # SilkyGPT
 
-Cross-platform applicaton that takes user submitted events and displays them on a map
+A conference app with chat and schedule notifications
 
+## Description
+Get the NHSCYPAA XXIV App!
 
-## Demo
+- Get on-the-hour schedule notifications
+- Chat with other YPAA directly in the app
+- Explore NHSCYPAA
+  - Program
+  - Hotel
+  - Workshops
+  - Panels
 
 <p align="center">
-<img src="https://github.com/mkostandin/silkygpt-flutter-app/blob/main/silky-github-vertical.gif" style="display:block;margin:auto;" alt="NECYVERSE" width="50%"/>
+<img src="https://github.com/mkostandin/silkygpt-flutter-app/blob/main/silky-github-vertical.gif)" style="display:block;margin:auto;" alt="NECYVERSE" width="40%"/>
 </p>
 
-<a href="https://www.bring-necypaa-to-nh.org" target="_blank">NECYVERSE Live Demo</a>
-
+<a href="https://www.youtube.com/watch?v=-JZpr1r3hI8" target="_blank">Private Release Trailer</a>
 ## Features
 
-- Cross Platform
-- User Submitted Content
-- 3D Map
-- Video
+- Anonymous Chat
+- Anonymous Login
+- Push Notifications
+- PDF Viewer
+- Animation
 
 
 ## 🔗 Store Links
-[![App](https://img.shields.io/badge/App_store-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://katherineoelsner.com/)
-[![linkedin](https://img.shields.io/badge/Google_PLAY-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/)
-[![twitter](https://img.shields.io/badge/twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/)
-
+- [App Store](https://apps.apple.com/us/app/nhscypaa-xxiv/id6478572035)
+- [Google Play Store](https://play.google.com/store/apps/details?id=www.nhscypaaxxiv.org)
 
 ## Tech Stack
 
-**Client** Google Maps Javascript API, Vanilla
-
-**Server:** Node, Express
-
+- FlutterFlow
+- Buildship
+- Flutter
+- Dart
+- Firebase
+- AWS Amplify
+- Javascript
+- Minnit Chat
 
 ## Related
 
