@@ -17,15 +17,7 @@ SilkyGPT - 1st AI Chatbot for Recovery
 <img src="https://github.com/mkostandin/silkygpt-flutter-app/blob/main/silky-github-vertical.gif" style="display:block;margin:auto;" alt="NECYVERSE" width="40%"/>
 </p>
 
-<a href="https://www.youtube.com/watch?v=-JZpr1r3hI8" target="_blank">Private Release Trailer</a>
-## Features
-
-- Anonymous Chat
-- Anonymous Login
-- Push Notifications
-- PDF Viewer
-- Animation
-
+<a href="https://www.youtube.com/watch?v=CueiutuPrgE" target="_blank">Private Release Trailer</a>
 
 ## 🔗 Store Links
 - [App Store](https://apps.apple.com/us/app/silky-by-nh-bid/id6464329743)
