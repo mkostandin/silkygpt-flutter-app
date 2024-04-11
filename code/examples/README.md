@@ -1,7 +1,28 @@
+
+
 ## GPT Index/LlamaIndex
 https://github.com/run-llama/LlamaIndexTS
 https://github.com/awesome-openai/gpt_index
 
+``` python
+def construct_index(directory_path):
+    max_input_size = 4096
+    num_outputs = 512
+    max_chunk_overlap = 20
+    chunk_size_limit = 600
+
+    prompt_helper = PromptHelper(max_input_size, num_outputs, max_chunk_overlap, chunk_size_limit=chunk_size_limit)
+
+    llm_predictor = LLMPredictor(llm=ChatOpenAI(temperature=0.7, model_name="gpt-4", max_tokens=num_outputs))
+
+    documents = SimpleDirectoryReader(directory_path).load_data()
+
+    index = GPTSimpleVectorIndex(documents, llm_predictor=llm_predictor, prompt_helper=prompt_helper)
+
+    index.save_to_disk('index.json')
+
+    return index
+```
 > ### Overview
 >
 > GPT Index is a powerful tool that connects large language models (LLMs) with external data sources. It allows you to access and use any information you need without worrying about the prompt size limit of LLMs. GPT Index also simplifies the code and reduces the cost of building LLM applications.
