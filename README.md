@@ -15,8 +15,7 @@ SilkyGPT - The first AI Chatbot for Recovery
 <img src="https://github.com/mkostandin/silkygpt-flutter-app/blob/main/silky-github-vertical.gif" style="display:block;margin:auto;" alt="NECYVERSE" width="40%"/>
 </p>
 
-https://daftmonk-silkygpt-nh-bid.hf.space/
-<a href="https://www.youtube.com/watch?v=CueiutuPrgE](https://daftmonk-silkygpt-nh-bid.hf.space/" target="_blank">Live Demo</a>
+<a href="https://www.youtube.com/watch?v=CueiutuPrgE](https://daftmonk-silkygpt-nh-bid.hf.space/" target="_blank">Live Demo</a> <br>
 <a href="https://www.youtube.com/watch?v=CueiutuPrgE" target="_blank">Private Release Trailer</a>
 
 ## 🔗 Store Links
