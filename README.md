@@ -4,10 +4,8 @@
 Released in September 2023 after GPT 4 access to OpenAI API was introduced. Chains an index of over 1,000,000 words from various sources on recovery to power a custom chatbot from PDFs and web pages.
 
 ## Description
-SilkyGPT - 1st AI Chatbot for Recovery
+SilkyGPT - The first AI Chatbot for Recovery
 
-- Talk to an AI chatbot built for recovery
-- Write poetry or rap songs
 - Point to relevant recovery literature from widely available sources
 - Learn more about the 12 Steps
 - Get tips and advice on how to cope with cravings, triggers, and relapses
