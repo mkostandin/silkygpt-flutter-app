@@ -14,7 +14,7 @@ SilkyGPT - The first AI Chatbot for Recovery
 - Stay motivated and inspired
 
 <p align="center">
-<img src="https://github.com/mkostandin/silkygpt-flutter-app/blob/main/silky-github-vertical.gif" style="display:block;margin:auto;" alt="NECYVERSE" width="45%"/>
+<img src="https://github.com/mkostandin/silkygpt-flutter-app/blob/main/silky-github-vertical.gif" style="display:block;margin:auto;" alt="NECYVERSE" width="40%"/>
 </p>
 
 <a href="http://daftmonk-silkygpt-nh-bid.hf.space/" target="_blank">Live Demo</a> <br>
