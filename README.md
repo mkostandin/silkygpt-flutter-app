@@ -3,6 +3,8 @@
 
 Released in September 2023 after GPT-4 access to OpenAI API was introduced. Chains an index of over 1,000,000 words from various sources on recovery to power a custom chatbot from PDFs and web pages.
 
+Update Note: Runs 35 times faster since launch!
+
 ## Description
 SilkyGPT - The first AI Chatbot for Recovery
 
