@@ -30,7 +30,25 @@ def construct_index(directory_path):
 
 In the above code, LangChain is used to create the chatbot, the LLM predictor. It combines the indexed information with the language model’s predictions to generate a coherent and contextually relevant response.
 
-> 1. Use-Case Specific Chains: Chains can be thought of as assembling these components in particular ways in order to best accomplish a particular use case. These are intended to be a higher level interface through which people can easily get started with a specific use case. These chains are also designed to be customizable.
+``` python
+def chatbot(input_text):
+    index = GPTSimpleVectorIndex.load_from_disk('index.json')
+    response = index.query(input_text + 'Respond helpfully. Don\'t say addicts. Alcoholics will always need to go to meetings. Alcoholics are never finished with the 12 Steps. Try to reference specific literature. ', response_mode="compact")
+    return response.response
+```
+## Gradio
 
-## OpenAI API - GPT-4
-## Flutter - Dart Widget
+The main element of the UI is made using Gradio. 
+
+``` python
+iface = gr.Interface(fn=chatbot,
+                     inputs=gr.components.Textbox(lines=7, label="Ask Silky:"),
+                     outputs="text",
+                     allow_flagging="never",
+                     article="WARNING: This is a chatbot. It is wrong very often. It is not a substitute for professional medical advice, diagnosis, or treatment. If you think you are an alcoholic, get help first from real people, not a chatbot. If you have a medical emergency, please call 911 or your local emergency number. Help make Silky better. Email feedback to necyverse+silky@gmail.com",
+                     description="",
+                     theme=gr.themes.Soft(),
+                     title="")
+
+iface.launch()
+```
