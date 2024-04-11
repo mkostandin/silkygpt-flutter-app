@@ -1,8 +1,10 @@
 
 
 ## GPT Index/LlamaIndex
-https://github.com/run-llama/LlamaIndexTS
-https://github.com/awesome-openai/gpt_index
+
+A directory is filled with text and PDFs, and then a Vector Store Index is made using LlamaIndex and OpenAI API for retrieval. The vector store collects snippets of text from the documents in the directory and then embeds numerical values in them. These embeddings are compared to answer queries.
+
+The following code produces a GPT Index in the directory where text and PDFs are. 
 
 ``` python
 def construct_index(directory_path):
