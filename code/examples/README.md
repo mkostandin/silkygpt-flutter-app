@@ -4,7 +4,7 @@
 
 A directory is filled with text and PDFs, and then a Vector Store Index is made using LlamaIndex and OpenAI API for retrieval. The Vector Store Index collects snippets of text from the documents in the directory and then embeds numerical values in them. These embeddings are compared to answer queries.
 
-The following code produces a persit directory for the vector stores. 
+The following code produces a persist directory for the vector stores. 
 
 ``` python
 max_input_size = 4096
