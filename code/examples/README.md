@@ -1,6 +1,6 @@
 
 
-## GPT Index/LlamaIndex
+## LlamaIndex
 
 A directory is filled with text and PDFs, and then a Vector Store Index is made using LlamaIndex and OpenAI API for retrieval. The Vector Store Index collects snippets of text from the documents in the directory and then embeds numerical values in them. These embeddings are compared to answer queries.
 
