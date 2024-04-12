@@ -36,8 +36,8 @@ In the above code, LangChain is used to create the chatbot, the LLM predictor. I
 
 ``` python
 def chatbot(input_text):
-    index = GPTSimpleVectorIndex.load_from_disk('index.json')
-    response = index.query(input_text + 'Respond helpfully. Don\'t say addicts. Alcoholics will always need to go to meetings. Alcoholics are never finished with the 12 Steps. Try to reference specific literature. ', response_mode="compact")
+    query_engine = new_index.as_query_engine()
+    response = query_engine.query(input_text + "[OMITTED]")
     return response.response
 ```
 ## Gradio
