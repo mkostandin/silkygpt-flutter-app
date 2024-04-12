@@ -37,7 +37,7 @@ In the above code, LangChain is used to create the chatbot, the LLM predictor. I
 ``` python
 def chatbot(input_text):
     query_engine = new_index.as_query_engine()
-    response = query_engine.query(input_text + "[OMITTED]")
+    response = query_engine.query(input_text + "[OMITTED IN README FOR BREVITY]")
     return response.response
 ```
 ## Gradio
