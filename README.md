@@ -1,7 +1,7 @@
 
 # SilkyGPT
 
-Released in September 2023 after GPT-4 access to the OpenAI API was introduced. Chains an index of over 1,000,000 words from various sources on recovery to power a custom chatbot from PDFs and web pages.
+Released in September 2023 after GPT-4 access to the OpenAI API was introduced. It chains an index of over 1,000,000 words from various sources, PDFs, and text on recovery to power a custom chatbot.
 
 Update Note: Runs 35 times faster since launch!
 
