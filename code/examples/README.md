@@ -4,24 +4,28 @@
 
 A directory is filled with text and PDFs, and then a Vector Store Index is made using LlamaIndex and OpenAI API for retrieval. The Vector Store Index collects snippets of text from the documents in the directory and then embeds numerical values in them. These embeddings are compared to answer queries.
 
-The following code produces a GPT Index in the directory where text and PDFs are. 
+The following code produces a persit directory for the vector stores. 
 
 ``` python
+max_input_size = 4096
+num_outputs = 512
+chunk_size_limit = 600
+
+prompt_helper = PromptHelper(max_input_size, num_outputs, chunk_overlap_ratio= 0.1, chunk_size_limit=chunk_size_limit)
+
+llm_predictor = LLMPredictor(llm=ChatOpenAI(temperature=0.7, model_name="gpt-4-turbo", max_tokens=num_outputs))
+
+service_context = ServiceContext.from_defaults(
+    llm_predictor=llm_predictor, 
+    prompt_helper=prompt_helper,
+    )
+
 def construct_index(directory_path):
-    max_input_size = 4096
-    num_outputs = 512
-    max_chunk_overlap = 20
-    chunk_size_limit = 600
-
-    prompt_helper = PromptHelper(max_input_size, num_outputs, max_chunk_overlap, chunk_size_limit=chunk_size_limit)
-
-    llm_predictor = LLMPredictor(llm=ChatOpenAI(temperature=0.7, model_name="gpt-4", max_tokens=num_outputs))
-
     documents = SimpleDirectoryReader(directory_path).load_data()
+    index = GPTVectorStoreIndex(documents, service_context=service_context)
 
-    index = GPTSimpleVectorIndex(documents, llm_predictor=llm_predictor, prompt_helper=prompt_helper)
-
-    index.save_to_disk('index.json')
+    
+    index.storage_context.persist('index.json')
 
     return index
 ```
